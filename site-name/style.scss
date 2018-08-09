@@ -1,0 +1,35 @@
+/*!
+Theme Name: Site Name
+Description: Site tagline
+Author: Twelve12
+Author URI: https://www.twelve12.com
+Version: 3.0
+*/
+
+
+// Setting variables and mixins
+@import "scss/config/_variables";
+@import "scss/config/_mixins";
+//@import "scss/config/_animations";
+
+
+// Tools - Make sure these are the latest versions
+@import "scss/tools/_normalize";
+@import "scss/tools/flexible-gs/_flexible-grid-system";
+@import "scss/tools/font-awesome/fontawesome";
+@import "scss/tools/font-awesome/fa-regular";
+@import "scss/tools/font-awesome/fa-solid";
+@import "scss/tools/font-awesome/fa-brands";
+//@import "scss/tools/slick/_slick";
+
+
+// Global Components - Add more components if needed
+@import "scss/global/_fonts";
+@import "scss/global/_global";
+@import "scss/global/_header";
+@import "scss/global/_navigation";
+@import "scss/global/_footer";
+
+
+// Pages - The page specific styles
+@import "scss/pages/_home";

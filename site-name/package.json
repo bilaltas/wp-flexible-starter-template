@@ -1,0 +1,21 @@
+{
+  "name": "site-name",
+  "version": "3.0.0",
+  "description": "Site tagline",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-sass": "latest",
+    "gulp-rename": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-plumber": "latest",
+    "gulp-notify": "latest",
+    "gulp-sass-lint": "latest",
+    "gulp-sourcemaps": "latest",
+    "run-sequence": "latest"
+  },
+  "keywords": [],
+  "author": "Twelve12",
+  "license": "ISC"
+}

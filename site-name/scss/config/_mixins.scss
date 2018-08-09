@@ -1,0 +1,19 @@
+/*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
+
+				* -------  Add Fonts  ------- *
+
+-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
+
+@mixin add-font($font-name, $font-file-name, $font-weight:normal) {
+    @font-face {
+        font-family: $font-name;
+        src: url('fonts/'+ $font-file-name +'.eot');
+        src: url('fonts/'+ $font-file-name +'.eot?#iefix') format('embedded-opentype'),
+             url('fonts/'+ $font-file-name +'.woff2') format('woff2'),
+             url('fonts/'+ $font-file-name +'.woff') format('woff'),
+             url('fonts/'+ $font-file-name +'.ttf') format('truetype'),
+             url('fonts/'+ $font-file-name +'.svg#'+ $font-file-name +'') format('svg');
+        font-weight: $font-weight;
+        font-style: normal;
+    }
+}
