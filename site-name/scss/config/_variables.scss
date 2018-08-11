@@ -4,10 +4,10 @@
 
 -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
-// Colors
-$color-primary: black;
+// General Colors
+$color-primary: #2C467B;
 $color-secondary: gray;
-$color-bg: white;
+$bg-color: #2C467B;
 
 
 // Sizes
@@ -17,10 +17,25 @@ $border-radius: 3px;
 $finger-size: 44px;
 
 
-// Typography
-$fa-font-path: "./fonts";
-$primary-font-family: 'Open Sans', Arial, sans-serif;
-$secondary-font-family: 'Scada', sans-serif;
+// General Typography
+$primary-font-family: 'Roboto', sans-serif;
+$secondary-font-family: 'Museo', serif;
 $font-size: 15px;
 $font-size-small: .9em;
 $font-size-big: 1.2em;
+
+
+// Texts
+$text-color: white;
+$text-font-family: $primary-font-family;
+$text-font-size: 15px;
+$text-font-weight: normal;
+$text-line-height: auto;
+
+
+// Titles
+$title-color: white;
+$title-font-family: $secondary-font-family;
+$title-font-size: 40px;
+$title-font-weight: bold;
+$title-line-height: auto;

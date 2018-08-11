@@ -14,16 +14,36 @@ html, body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-	background-color: $color-bg;
+	background-color: $bg-color;
 }
 
 
 body {
-	font-family: $primary-font-family;
-	font-size: $font-size;
-	color: $color-primary;
+	color: $text-color;
+	font-family: $text-font-family;
+	font-size: $text-font-size;
+	font-weight: $text-font-weight;
+	line-height: $text-line-height;
 
 	* {
-		//outline: none;
+		outline: none;
+		box-sizing: border-box;
 	}
+}
+
+a {
+	color: inherit;
+}
+
+h1, .h1-size,
+h2, .h2-size,
+h3, .h3-size,
+h4, .h4-size,
+h5, .h5-size,
+h6, .h6-size {
+	color: $title-color;
+	font-family: $title-font-family;
+	font-size: $title-font-size;
+	font-weight: $title-font-weight;
+	line-height: $title-line-height;
 }
