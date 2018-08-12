@@ -5,14 +5,13 @@
 -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
 // General Colors
-$color-primary: #2C467B;
+$color-primary: black;
 $color-secondary: gray;
-$bg-color: #2C467B;
+$bg-color: white;
 
 
 // Sizes
 $container-width: 1234px;
-$gutter-size: 20px;
 $border-radius: 3px;
 $finger-size: 44px;
 
@@ -30,7 +29,7 @@ $text-color: white;
 $text-font-family: $primary-font-family;
 $text-font-size: 15px;
 $text-font-weight: normal;
-$text-line-height: auto;
+$text-line-height: normal;
 
 
 // Titles
@@ -38,4 +37,4 @@ $title-color: white;
 $title-font-family: $secondary-font-family;
 $title-font-size: 40px;
 $title-font-weight: bold;
-$title-line-height: auto;
+$title-line-height: normal;
