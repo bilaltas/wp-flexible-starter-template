@@ -58,13 +58,13 @@ add_action('wp_enqueue_scripts', 'sitename_styles_and_scripts');
 
 -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
-function sitename_primary_menu() {
+function sitename_menu($menu_location = "primary") {
 
 	wp_nav_menu (
 
 		array (
 
-			'theme_location'  => 'primary',
+			'theme_location'  => $menu_location,
 			'menu'            => '',
 			'menu_class'      => 'menu',
 			'menu_id'         => '',

@@ -13,5 +13,5 @@
 	<body <?php body_class(); ?>>
 
 		<header>
-
+			<nav><?php greenlaw_menu() ?></nav>
 		</header>
