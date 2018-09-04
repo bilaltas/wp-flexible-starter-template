@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "latest",
+    "gulp": "^3.9.1",
     "gulp-sass": "latest",
     "gulp-rename": "latest",
     "gulp-autoprefixer": "latest",
