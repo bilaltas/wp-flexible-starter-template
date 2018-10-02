@@ -73,6 +73,15 @@ h6, .h6-size {
 	margin-right: auto;
 }
 
+figure {
+	margin: 0;
+
+	& > img {
+		max-width: 100%;
+	}
+
+}
+
 main {
 
 	section {

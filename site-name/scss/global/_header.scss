@@ -4,9 +4,17 @@
 
 -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
-$header-height: 100px;
+$header-height: 120px;
 
 header {
-	height: $header-height;
-	display: flex;
+	background-color: black;
+
+	& > .wrap {
+		height: $header-height;
+
+		& > .col {
+			color: white;
+		}
+	}
+
 }

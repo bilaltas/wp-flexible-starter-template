@@ -13,5 +13,12 @@
 	<body <?php body_class(); ?>>
 
 		<header>
-			<nav><?php greenlaw_menu() ?></nav>
+			<div class="wrap xl-flexbox xl-between container">
+				<div class="col">
+					<a href="<?=home_url()?>">LOGO</a>
+				</div>
+				<div class="col">
+					<nav><?php sitename_menu() ?></nav>
+				</div>
+			</div>
 		</header>

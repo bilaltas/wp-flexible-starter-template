@@ -4,6 +4,17 @@
 
 -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
+$footer-height: 80px;
+
 footer {
+	background-color: gray;
+
+	& > .wrap {
+		height: $footer-height;
+
+		& > .col {
+			color: white;
+		}
+	}
 
 }

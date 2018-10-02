@@ -3,7 +3,7 @@ Theme Name: Site Name
 Description: Site tagline
 Author: Twelve12
 Author URI: https://www.twelve12.com
-Version: 3.7
+Version: 3.8
 */
 
 
@@ -16,7 +16,7 @@ Version: 3.7
 // Tools - Make sure these are the latest versions
 @import "scss/tools/_normalize";
 @import "scss/tools/flexible-gs/_flexible-grid-system";
-//@import "scss/tools/slick/_slick"; // Add it's files to "scss/tools/" folder first
+//@import "scss/tools/slick/_slick"; // Uncomment if slider needed
 
 
 // Global Components - Add more components if needed

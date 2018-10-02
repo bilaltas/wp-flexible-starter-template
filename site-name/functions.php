@@ -43,7 +43,7 @@ function sitename_styles_and_scripts() {
 	wp_enqueue_style('main', get_stylesheet_directory_uri()."/style.css", array(), 1); // Compiled by "style.scss"
 
 	// Scripts
-	//wp_enqueue_script('slick', get_stylesheet_directory_uri()."/scss/tools/slick/slick.min.js", ['jquery']);
+	//wp_enqueue_script('slick', get_stylesheet_directory_uri()."/scss/tools/slick/slick.min.js", ['jquery']); // Uncomment if slider needed
 	wp_enqueue_script('script', get_stylesheet_directory_uri()."/js/script.js", ['jquery'], 1, true);
 
 }
@@ -77,7 +77,7 @@ function sitename_menu($menu_location = "primary") {
 			'after'           => '',
 			'link_before'     => '',
 			'link_after'      => '',
-			'items_wrap'      => '<ul>%3$s</ul>',
+			'items_wrap'      => '<ul class="'.$menu_location.'">%3$s</ul>',
 			'depth'           => 0,
 			'walker'          => ''
 
