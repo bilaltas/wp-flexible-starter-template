@@ -29,6 +29,13 @@ body {
 
 }
 
+.container {
+	max-width: $container-width;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 a {
 	color: inherit;
 }
@@ -64,13 +71,6 @@ h5, .h5-size {
 
 h6, .h6-size {
     font-size: 1.1em;
-}
-
-.container {
-	max-width: $container-width;
-	width: 95%;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 figure {
