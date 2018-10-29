@@ -3,7 +3,7 @@ Theme Name: Site Name
 Description: Site tagline
 Author: Twelve12
 Author URI: https://www.twelve12.com
-Version: 3.8
+Version: 3.9
 */
 
 
@@ -29,3 +29,7 @@ Version: 3.8
 
 // Pages - The page specific styles
 @import "scss/pages/_home";
+
+
+// Mobile Corrections
+@import "scss/global/_mobile";
