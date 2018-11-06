@@ -9,11 +9,9 @@
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php if ( has_post_thumbnail(get_the_id()) ) { ?>
-				<a href="<?=get_the_permalink()?>">
-					<figure>
-						<img src="<?=get_the_post_thumbnail_url(get_the_id(), 'medium')?>" alt=""/>
-					</figure>
-				</a>
+				<figure>
+					<img src="<?=get_the_post_thumbnail_url(get_the_id(), 'medium')?>" alt=""/>
+				</figure>
 				<?php } ?>
 
 				<h1><?php the_title(); ?></h1>
