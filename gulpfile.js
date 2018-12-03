@@ -8,9 +8,6 @@ var gulp        = require('gulp'),
     notify      = require('gulp-notify'),
     sassLint    = require('gulp-sass-lint'),
     sourcemaps  = require('gulp-sourcemaps');
-    // Temporary solution until gulp 4
-    // https://github.com/gulpjs/gulp/issues/355
-    runSequence = require('run-sequence');
 
 var displayError = function(error) {
   // Initial building up of the error
@@ -76,10 +73,5 @@ gulp.task('watch', function() {
 // BUILD TASKS
 // ------------
 
-gulp.task('default', function(done) {
-  runSequence('styles', 'watch', done);
-});
-
-gulp.task('build', function(done) {
-  runSequence('styles', done);
-});
+gulp.task('default', [ 'styles', 'watch' ]);
+gulp.task('build', [ 'styles' ]);

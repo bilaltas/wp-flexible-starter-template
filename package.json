@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "latest",
     "gulp-sass": "latest",
     "gulp-rename": "latest",
     "gulp-autoprefixer": "latest",
@@ -13,8 +13,7 @@
     "gulp-notify": "latest",
     "gulp-sass-lint": "latest",
     "gulp-sourcemaps": "latest",
-    "gulp-cli": "latest",
-    "run-sequence": "latest"
+    "gulp-cli": "latest"
   },
   "keywords": [],
   "author": "Twelve12",
