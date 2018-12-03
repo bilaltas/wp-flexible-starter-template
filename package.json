@@ -20,7 +20,7 @@
   "author": "Twelve12",
   "license": "ISC",
   "scripts": {
-    "build": "npm install --unsafe-perm=true --allow-root && npm install -g gulp-cli --unsafe-perm=true --allow-root && gulp build",
+    "build": "npm install && gulp build",
     "start": "gulp"
   }
 }
