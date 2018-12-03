@@ -1,6 +1,6 @@
 {
   "name": "twelve12",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Twelve12 Development Packages",
   "main": "gulpfile.js",
   "dependencies": {},
