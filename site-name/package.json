@@ -1,7 +1,7 @@
 {
-  "name": "site-name",
-  "version": "3.9.0",
-  "description": "Site tagline",
+  "name": "twelve12",
+  "version": "4.0.0",
+  "description": "Twelve12 Development Packages",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -17,5 +17,9 @@
   },
   "keywords": [],
   "author": "Twelve12",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "build": "npm install --unsafe-perm=true --allow-root && npm install -g gulp-cli --unsafe-perm=true --allow-root && gulp build",
+    "start": "gulp"
+  }
 }

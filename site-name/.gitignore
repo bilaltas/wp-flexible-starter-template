@@ -1,4 +1,4 @@
 node_modules
 package-lock.json
 style.css
-style.map
+style.css.map
