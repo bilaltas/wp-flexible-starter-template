@@ -7,10 +7,8 @@
   "devDependencies": {
     "gulp": "4.0.0",
     "gulp-sass": "latest",
-    "gulp-rename": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-plumber": "latest",
-    "gulp-notify": "latest",
     "gulp-sass-lint": "latest",
     "gulp-sourcemaps": "latest",
     "gulp-cli": "latest"

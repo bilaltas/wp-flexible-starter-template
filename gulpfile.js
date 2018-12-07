@@ -2,7 +2,6 @@
 
 var gulp        = require('gulp'),
     sass        = require('gulp-sass'),
-    rename      = require('gulp-rename'),
     prefix      = require('gulp-autoprefixer'),
     plumber     = require('gulp-plumber'),
     sassLint    = require('gulp-sass-lint'),
@@ -29,7 +28,6 @@ gulp.task('styles', function() {
 		.pipe(sourcemaps.init())
 		.pipe(sass(sassOptions))
 		.pipe(prefix(prefixerOptions))
-		.pipe(rename('style.css'))
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('./'))
 });
