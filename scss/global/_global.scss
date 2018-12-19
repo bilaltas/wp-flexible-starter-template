@@ -40,6 +40,18 @@ a {
 	color: inherit;
 }
 
+.button {
+	background-color: $color-primary;
+	color: $bg-color;
+	border: 1px solid $border-color;
+	border-radius: $border-radius;
+	display: inline-flex;
+	height: $finger-size;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+}
+
 h1, .h1-size,
 h2, .h2-size,
 h3, .h3-size,
