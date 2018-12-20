@@ -40,7 +40,7 @@ a {
 	color: inherit;
 }
 
-.button
+.button,
 button,
 input[type="submit"],
 input[type="reset"] {
@@ -53,6 +53,15 @@ input[type="reset"] {
 	text-decoration: none;
 	justify-content: center;
 	align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"] {
+	border: 1px solid $color-primary;
+	border-radius: $border-radius;
+	height: $finger-size;
 }
 
 h1, .h1-size,
