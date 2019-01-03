@@ -1,6 +1,8 @@
+/*! Flexible Grid System 5.6.0 | Settings | Scss | MIT License | dnomak.com/flexiblegs */
+
 $flexiblegs-method: (
-  "css",
-  //"bem"
+  "css"
+  // "bem"
 );
 $flexiblegs-breakpoint: (
   "xl" : "",
@@ -22,6 +24,7 @@ $wrap-prop: (
   "top",
   "middle",
   "bottom",
+  "stretch",
   "between",
   "around",
   "baseline",
@@ -46,9 +49,7 @@ $wrap-gutter: (
 $wrap-outside: (
   0, 8, 16, 24, 40
 );
-$wrap-masonry: (
-  2, 3, 4, 5, 6
-);
+
 
 @import "_flexiblegs-scss";
 @import "_flexiblegs-scss-plus";
