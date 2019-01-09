@@ -7,28 +7,28 @@
 /* lg - TABLET LANDSCAPE */
 @media (max-width: 1199px) {
 
-
+	@import "mobile/lg.scss";
 
 }
 
 /* md - TABLET PORTRAIT */
 @media (max-width: 991px) {
 
-
+	@import "mobile/md.scss";
 
 }
 
 /* sm - MOBILE LANDSCAPE */
 @media (max-width: 767px) {
 
-
+	@import "mobile/sm.scss";
 
 }
 
 /* xs - MOBILE PORTRAIT */
 @media (max-width: 479px) {
 
-
+	@import "mobile/xs.scss";
 
 }
 
