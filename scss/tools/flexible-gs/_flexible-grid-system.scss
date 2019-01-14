@@ -51,5 +51,95 @@ $wrap-outside: (
 );
 
 
+$custom-sizeables: (
+
+  // Margins
+  "mt" : (
+    "values" : (0, 20),
+    "codes"  : (
+      "margin-top" : 'px'
+    )
+	),
+  "mb" : (
+    "values" : (0, 20),
+    "codes"  : (
+      "margin-bottom" : 'px'
+    )
+	),
+  "marginy" : (
+    "values" : (0, 20),
+    "codes"  : (
+      "margin-top" : 'px',
+      "margin-bottom" : 'px',
+    )
+  ),
+  "marginx" : (
+    "values" : (0, 20),
+    "codes"  : (
+      "margin-left" : 'px',
+      "margin-right" : 'px',
+    )
+  ),
+
+
+  // Paddings
+  "pt" : (
+    "values" : (0, 20),
+    "codes"  : (
+      "padding-top" : 'px'
+    )
+	),
+  "pb" : (
+    "values" : (0, 20),
+    "codes"  : (
+      "padding-bottom" : 'px'
+    )
+	),
+  "paddingy" : (
+    "values" : (0, 20),
+    "codes"  : (
+      "padding-top" : 'px',
+      "padding-bottom" : 'px',
+    )
+	),
+  "paddingx" : (
+    "values" : (0, 20),
+    "codes"  : (
+      "padding-left" : 'px',
+      "padding-right" : 'px',
+    )
+	),
+
+
+  // Text Styles
+  "fw" : (
+    "values" : (normal, bold, 900),
+    "codes"  : (
+			"font-weight"
+		)
+	),
+
+  "ta" : (
+    "values" : (left, right, center, justify),
+    "codes"  : (
+			"text-align"
+		)
+	),
+
+  "color" : (
+    "values" : (
+			"red"     : "#ff0000",
+			"yellow"  : "#ffff00",
+			"green"   : "#008000"
+		),
+    "codes"  : (
+			"color"
+		)
+	),
+
+);
+
+
 @import "_flexiblegs-scss";
 @import "_flexiblegs-scss-plus";
+@import "_flexiblegs-custom";
