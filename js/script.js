@@ -6,12 +6,7 @@ jQuery(document).ready(function($){
 
 	-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
-	// Select all links with hashes
-	$('a[href*="#"]')
-		// Remove links that don't actually link to anything
-		.not('[href="#"]')
-		.not('[href="#0"]')
-		.click(function(event) {
+	function goToHash(event) {
 		// On-page links
 		if (
 		  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
@@ -26,7 +21,7 @@ jQuery(document).ready(function($){
 		    // Only prevent default if animation is actually gonna happen
 		    event.preventDefault();
 		    $('html, body').animate({
-		      scrollTop: target.offset().top
+		      scrollTop: target.offset().top - 100
 		    }, 1000, function() {
 		      // Callback after animation
 		      // Must change focus!
@@ -41,8 +36,10 @@ jQuery(document).ready(function($){
 		    });
 		  }
 		}
-	});
+	}
 
+	// Select all links with hashes
+	$(document).on('click', 'a[href*="#"]:not([href="#"]):not([href="#0"])', goToHash);
 
 
 	/*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
