@@ -1,9 +1,9 @@
 		<footer>
-			<div class="wrap xl-flexbox xl-between container">
+			<div class="wrap xl-flexbox xl-middle xl-2 container">
 				<div class="col">
 					<a href="<?=home_url()?>" title="<?php bloginfo('name'); ?> Home">LOGO</a>
 				</div>
-				<div class="col">
+				<div class="col xl-right">
 					FOTER CONTENT
 				</div>
 			</div>
