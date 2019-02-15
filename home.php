@@ -16,7 +16,7 @@
 
 					<div class="category">
 						Category: <a href="<?=get_category_link( get_the_category()[0] )?>"><?=get_the_category()[0]->name?></a>
-					</div><br/>
+					</div>
 
 					<div class="wrap xl-table">
 						<?php if ( has_post_thumbnail(get_the_id()) ) { ?>
