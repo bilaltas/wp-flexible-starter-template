@@ -10,7 +10,7 @@
 
       .#{$breakpoint-shortcut}#{$shortcut}-#{$value-shortcut} {
         @each $custom-css, $suffix in $codes {
-          #{$custom-css}: #{$value}#{$suffix};
+          #{$custom-css}: #{$value}#{$suffix} !important;
         }
       }
 
