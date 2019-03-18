@@ -9,9 +9,7 @@ jQuery(document).ready(function($){
 	function goToHash(event) {
 		// On-page links
 		if (
-		  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-		  &&
-		  location.hostname == this.hostname
+		  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname
 		) {
 		  // Figure out element to scroll to
 		  var target = $(this.hash);
@@ -32,7 +30,7 @@ jQuery(document).ready(function($){
 		      } else {
 		        $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
 		        $target.focus(); // Set focus again
-		      };
+		      }
 		    });
 		  }
 		}
