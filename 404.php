@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main>
+<main id="404">
 	<section>
 		<div class="wrap xl-center container">
 			<div class="col">

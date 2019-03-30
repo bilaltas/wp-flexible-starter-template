@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main>
+<main id="archive">
 	<section>
 		<div class="wrap container">
 			<div class="col">
