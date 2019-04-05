@@ -58,10 +58,15 @@ input[type="reset"] {
 input[type="text"],
 input[type="email"],
 input[type="url"],
-input[type="tel"] {
+input[type="tel"],
+textarea {
 	border: 1px solid $color-primary;
 	border-radius: $border-radius;
 	height: $finger-size;
+}
+
+textarea {
+	height: auto;
 }
 
 h1, .h1-size,
@@ -73,28 +78,38 @@ h6, .h6-size {
 	color: $title-color;
 	font-family: $title-font-family;
 	font-size: $title-font-size;
-	font-weight: $title-font-weight;
 	line-height: $title-line-height;
+	font-weight: $title-font-weight;
 }
 
 h2, .h2-size {
-    font-size: 2.6em;
+	font-size: 2.6em;
+	line-height: normal;
+	font-weight: normal;
 }
 
 h3, .h3-size {
     font-size: 2.2em;
+	line-height: normal;
+	font-weight: normal;
 }
 
 h4, .h4-size {
     font-size: 1.9em;
+	line-height: normal;
+	font-weight: normal;
 }
 
 h5, .h5-size {
     font-size: 1.5em;
+	line-height: normal;
+	font-weight: normal;
 }
 
 h6, .h6-size {
     font-size: 1.1em;
+	line-height: normal;
+	font-weight: normal;
 }
 
 figure {
