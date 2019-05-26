@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "4.0.0",
+    "gulp": "latest",
     "gulp-sass": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-plumber": "latest",
