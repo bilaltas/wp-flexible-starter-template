@@ -4,13 +4,11 @@
 
 -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
-$header-height: 120px;
-
 header {
 	background-color: black;
 
 	& > .wrap {
-		height: $header-height;
+		min-height: $header-height;
 
 		& > .col {
 			color: white;

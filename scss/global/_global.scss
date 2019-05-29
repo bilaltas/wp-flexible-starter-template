@@ -40,29 +40,55 @@ a {
 	color: inherit;
 }
 
+p {
+	color: $text-color;
+	font-size: $text-font-size;
+	font-weight: $text-font-weight;
+	line-height: $text-line-height;
+}
+
 .button,
 button,
 input[type="submit"],
 input[type="reset"] {
+	text-decoration: none;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 	background-color: $color-primary;
 	color: $bg-color;
 	border: 1px solid $border-color;
 	border-radius: $border-radius;
-	display: inline-flex;
-	height: $finger-size;
-	text-decoration: none;
-	justify-content: center;
-	align-items: center;
+	min-height: $finger-size;
+	padding: 0 20px;
+
+	&:hover {
+		background-color: $color-secondary;
+	}
+
+	&.full {
+		width: 100%;
+	}
 }
 
 input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="tel"],
+input[type="number"],
 textarea {
 	border: 1px solid $color-primary;
 	border-radius: $border-radius;
-	height: $finger-size;
+	min-height: $finger-size;
+	padding: 5px 10px;
+
+	&::placeholder {
+		color: $color-secondary;
+	}
+
+	&.full {
+		width: 100%;
+	}
 }
 
 textarea {
@@ -83,31 +109,31 @@ h6, .h6-size {
 }
 
 h2, .h2-size {
-	font-size: 2.6em;
+	font-size: #{$title-font-size * 0.9};
 	line-height: normal;
 	font-weight: normal;
 }
 
 h3, .h3-size {
-    font-size: 2.2em;
+	font-size: #{$title-font-size * 0.8};
 	line-height: normal;
 	font-weight: normal;
 }
 
 h4, .h4-size {
-    font-size: 1.9em;
+	font-size: #{$title-font-size * 0.7};
 	line-height: normal;
 	font-weight: normal;
 }
 
 h5, .h5-size {
-    font-size: 1.5em;
+	font-size: #{$title-font-size * 0.6};
 	line-height: normal;
 	font-weight: normal;
 }
 
 h6, .h6-size {
-    font-size: 1.1em;
+	font-size: #{$title-font-size * 0.5};
 	line-height: normal;
 	font-weight: normal;
 }
@@ -122,9 +148,11 @@ figure {
 }
 
 main {
+	min-height: calc(100vh - #{$header-height + $footer-height});
 
-	section {
-		min-height: 500px;
+	& > section {
+		//min-height: calc(100vh - #{$header-height + $footer-height}); // Use this if all the section heights are the same as window height
+		min-height: 400px;
 	}
 
 }

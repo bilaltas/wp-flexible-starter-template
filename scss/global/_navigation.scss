@@ -6,9 +6,11 @@
 
 nav {
 
-	& > ul {
+	& > ul,
+	& > div > ul {
 
 		& > li {
+			display: inline-block;
 
 			& > a {
 
