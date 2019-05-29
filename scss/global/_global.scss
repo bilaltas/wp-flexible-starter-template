@@ -38,6 +38,10 @@ body {
 
 a {
 	color: inherit;
+
+	&:hover {
+		color: $color-secondary;
+	}
 }
 
 p {
@@ -45,6 +49,10 @@ p {
 	font-size: $text-font-size;
 	font-weight: $text-font-weight;
 	line-height: $text-line-height;
+
+	a {
+		//color: $color-secondary;
+	}
 }
 
 .button,
@@ -55,6 +63,7 @@ input[type="reset"] {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
+	
 	background-color: $color-primary;
 	color: $bg-color;
 	border: 1px solid $border-color;
@@ -64,6 +73,7 @@ input[type="reset"] {
 
 	&:hover {
 		background-color: $color-secondary;
+		color: $bg-color;
 	}
 
 	&.full {
@@ -151,8 +161,8 @@ main {
 	min-height: calc(100vh - #{$header-height + $footer-height});
 
 	& > section {
-		//min-height: calc(100vh - #{$header-height + $footer-height}); // Use this if all the section heights are the same as window height
 		min-height: 400px;
+		//min-height: calc(100vh - #{$header-height + $footer-height}); // Use this if all the section heights are the same as window height
 	}
 
 }

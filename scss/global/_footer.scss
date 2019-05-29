@@ -5,13 +5,22 @@
 -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
 footer {
-	background-color: gray;
+	background-color: $color-secondary;
 
 	& > .wrap {
 		min-height: $footer-height;
 
 		& > .col {
 			color: white;
+
+			a {
+				color: white;
+				
+				&:hover {
+					color: $color-primary;
+				}
+
+			}
 		}
 	}
 

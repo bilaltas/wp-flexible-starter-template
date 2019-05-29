@@ -5,13 +5,23 @@
 -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
 header {
-	background-color: black;
+	background-color: $color-primary;
 
 	& > .wrap {
 		min-height: $header-height;
 
 		& > .col {
 			color: white;
+
+			a {
+				color: white;
+				
+				&:hover {
+					color: $color-primary;
+				}
+
+			}
+
 		}
 	}
 
