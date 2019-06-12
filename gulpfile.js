@@ -15,10 +15,6 @@ var sassOptions = {
   outputStyle: 'expanded'
 };
 
-var prefixerOptions = {
-  browsers: ['ff > 2', '> 2%', 'ie 8']
-};
-
 
 // BUILD SUBTASKS
 // ---------------
@@ -27,7 +23,7 @@ gulp.task('styles', function() {
 	return gulp.src('./style.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sass(sassOptions))
-		.pipe(prefix(prefixerOptions))
+		.pipe(prefix())
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('./'))
 });
