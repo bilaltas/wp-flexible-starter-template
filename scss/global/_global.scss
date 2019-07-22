@@ -61,8 +61,9 @@ input[type="submit"],
 input[type="reset"] {
 	text-decoration: none;
 	display: inline-flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+	text-align: center;
 	
 	background-color: $color-primary;
 	color: $bg-color;
@@ -163,6 +164,18 @@ main {
 	& > section {
 		min-height: 400px;
 		//min-height: calc(100vh - #{$header-height + $footer-height}); // Use this if all the section heights are the same as window height
+
+		ul {
+
+			& > li {
+				color: $text-color;
+				font-size: $text-font-size;
+				font-weight: $text-font-weight;
+				line-height: $text-line-height;
+			}
+
+		}
+
 	}
 
 }
