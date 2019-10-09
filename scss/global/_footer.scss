@@ -1,23 +1,23 @@
 /*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
 
-			* -------  Footer  ------- *
+	* ------- Footer  ------- *
 
 -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
 footer {
-	background-color: $color-secondary;
+	background-color: $color-light;
 
 	& > .wrap {
 		min-height: $footer-height;
 
 		& > .col {
-			color: white;
+			color: $color-lightest;
 
 			a {
-				color: white;
+				color: $color-lightest;
 				
 				&:hover {
-					color: $color-primary;
+					color: $color-darkest;
 				}
 
 			}

@@ -1,6 +1,6 @@
 /*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
 
-			* -------  General Settings  ------- *
+	* ------- General Settings  ------- *
 
 -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
@@ -40,7 +40,7 @@ a {
 	color: inherit;
 
 	&:hover {
-		color: $color-secondary;
+		color: $color-light;
 	}
 }
 
@@ -49,10 +49,6 @@ p {
 	font-size: $text-font-size;
 	font-weight: $text-font-weight;
 	line-height: $text-line-height;
-
-	a {
-		//color: $color-secondary;
-	}
 }
 
 .button,
@@ -64,16 +60,18 @@ input[type="reset"] {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	
-	background-color: $color-primary;
-	color: $bg-color;
-	border: 1px solid $border-color;
-	border-radius: $border-radius;
+
 	min-height: $finger-size;
 	padding: 0 20px;
+	
+	background-color: $color-darkest;
+	color: $bg-color;
+
+	border: 1px solid $border-color;
+	border-radius: $border-radius;
 
 	&:hover {
-		background-color: $color-secondary;
+		background-color: $color-light;
 		color: $bg-color;
 	}
 
@@ -88,13 +86,14 @@ input[type="url"],
 input[type="tel"],
 input[type="number"],
 textarea {
-	border: 1px solid $color-primary;
-	border-radius: $border-radius;
 	min-height: $finger-size;
 	padding: 5px 10px;
 
+	border: 1px solid $border-color;
+	border-radius: $border-radius;
+
 	&::placeholder {
-		color: $color-secondary;
+		color: $color-light;
 	}
 
 	&.full {

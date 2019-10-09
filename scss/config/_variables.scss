@@ -1,43 +1,73 @@
 /*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
 
-			* -------  Variables  ------- *
+	* ------- Colors  ------- *
 
 -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
-// General Colors
-$color-primary: black;
-$color-secondary: gray;
+// Dark Colors
+$color-darkest: #000000;
+$color-darker: #333333;
+$color-dark: #868686;
+
+// Light Colors
+$color-light: #7B7B7B;
+$color-lighter: #EEEEEE;
+$color-lightest: #FFFFFF;
+
+// Other Colors
 $bg-color: white;
+// Add as many as you need...
 
 
-// Sizes
+/*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
+
+	* ------- Sizes  ------- *
+
+-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
+
 $header-height: 120px;
 $footer-height: 80px;
 $container-width: 1234px;
-$border-color: $color-primary;
-$border-radius: 3px;
 $finger-size: 44px;
 
 
-// General Typography
+/*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
+
+	* ------- Borders  ------- *
+
+-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
+
+// Borders
+$border-color: $color-dark;
+$border-radius: 3px;
+
+
+
+/*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
+
+	* ------- Typography  ------- *
+
+-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
+
 $primary-font-family: 'Roboto', sans-serif;
 $secondary-font-family: 'Open Sans', serif;
+
 $font-size: 15px;
 $font-size-small: .9em;
 $font-size-big: 1.2em;
 
 
-// Texts
-$text-color: black;
-$text-font-family: $primary-font-family;
-$text-font-size: 15px;
-$text-font-weight: normal;
-$text-line-height: normal;
-
-
 // Titles
-$title-color: black;
 $title-font-family: $secondary-font-family;
-$title-font-size: 40px;
+$title-color: $color-darkest;
+$title-font-size: $font-size-big;
 $title-font-weight: bold;
 $title-line-height: normal;
+
+
+// Texts
+$text-font-family: $primary-font-family;
+$text-color: $color-darker;
+$text-font-size: $font-size;
+$text-font-weight: normal;
+$text-line-height: normal;

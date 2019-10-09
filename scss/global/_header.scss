@@ -1,23 +1,23 @@
 /*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
 
-			* -------  Header  ------- *
+	* ------- Header  ------- *
 
 -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
 header {
-	background-color: $color-primary;
+	background-color: $color-darkest;
 
 	& > .wrap {
 		min-height: $header-height;
 
 		& > .col {
-			color: white;
+			color: $color-lightest;
 
 			a {
-				//color: white;
+				//color: $color-lightest;
 				
 				&:hover {
-					//color: $color-secondary;
+					//color: $color-light;
 				}
 
 			}
