@@ -129,8 +129,8 @@ get_header();
 						<div class="video-wrapper">
 
 							<video
-								src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_10mb.mp4" 
-								poster="http://xounts.twelve12.co/wp-content/themes/xounts/img/intro-video-background.jpg" 
+								src="https://sample-videos.com/video123/mp4/240/big_buck_bunny_240p_30mb.mp4" 
+								poster="<?=get_stylesheet_directory_uri()?>/screenshot.png" 
 								loop playsinline webkit-playsinline></video>
 
 							<div class="play-button">
@@ -160,7 +160,7 @@ get_header();
 							<video 
 								class="fill"
 								src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_10mb.mp4" 
-								poster="http://xounts.twelve12.co/wp-content/themes/xounts/img/intro-video-background.jpg" 
+								poster="<?=get_stylesheet_directory_uri()?>/screenshot.png" 
 								loop playsinline webkit-playsinline></video>
 
 							<div class="play-button">
@@ -190,7 +190,7 @@ get_header();
 							<video 
 								class="fill"
 								src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_10mb.mp4" 
-								poster="http://xounts.twelve12.co/wp-content/themes/xounts/img/intro-video-background.jpg" 
+								poster="<?=get_stylesheet_directory_uri()?>/screenshot.png" 
 								loop playsinline webkit-playsinline preload autoplay muted></video>
 
 							<div class="play-button">
@@ -219,7 +219,7 @@ get_header();
 
 							<video
 								src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_10mb.mp4" 
-								poster="http://xounts.twelve12.co/wp-content/themes/xounts/img/intro-video-background.jpg" 
+								poster="<?=get_stylesheet_directory_uri()?>/screenshot.png" 
 								loop playsinline webkit-playsinline preload autoplay muted></video>
 
 							<div class="video-text">
