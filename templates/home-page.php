@@ -88,7 +88,7 @@ get_header();
 					<div class="col xl-1-2">
 
 
-						<h2>BUTTONS</h2>
+						<h2>Buttons</h2>
 
 						<a href="#" class="button large">Large Button</a><br><br>
 						<a href="#" class="button">Multi Line<br>Button</a><br><br>
