@@ -15,7 +15,9 @@ $color-lighter: #EEEEEE;
 $color-lightest: #FFFFFF;
 
 // Other Colors
-$bg-color: white;
+$bg-color: $color-lightest;
+$header-bg-color: $color-darkest;
+$footer-bg-color: $color-darker;
 // Add as many as you need...
 
 

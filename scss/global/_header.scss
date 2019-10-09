@@ -5,7 +5,7 @@
 -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
 header {
-	background-color: $color-darkest;
+	background-color: $header-bg-color;
 
 	& > .wrap {
 		min-height: $header-height;
@@ -14,10 +14,10 @@ header {
 			color: $color-lightest;
 
 			a {
-				//color: $color-lightest;
+				color: $color-lightest;
 				
 				&:hover {
-					//color: $color-light;
+					color: $color-light;
 				}
 
 			}

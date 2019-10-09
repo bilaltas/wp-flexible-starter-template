@@ -5,7 +5,7 @@
 -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
 footer {
-	background-color: $color-light;
+	background-color: $footer-bg-color;
 
 	& > .wrap {
 		min-height: $footer-height;
@@ -17,7 +17,7 @@ footer {
 				color: $color-lightest;
 				
 				&:hover {
-					color: $color-darkest;
+					color: $color-light;
 				}
 
 			}
