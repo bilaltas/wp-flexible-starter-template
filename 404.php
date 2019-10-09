@@ -2,7 +2,7 @@
 
 <main id="404">
 	<section>
-		<div class="wrap xl-center container">
+		<div class="wrap xl-1 xl-center container">
 			<div class="col">
 
 

@@ -7,7 +7,7 @@ get_header();
 
 <main id="home">
 	<section>
-		<div class="wrap container">
+		<div class="wrap xl-1 container">
 			<div class="col">
 
 

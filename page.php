@@ -2,7 +2,7 @@
 
 <main id="default-page">
 	<section>
-		<div class="wrap container">
+		<div class="wrap xl-1 container">
 			<div class="col">
 
 
