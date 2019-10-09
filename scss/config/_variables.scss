@@ -61,7 +61,7 @@ $title-font-family: $secondary-font-family;
 $title-font-size: $font-size-larger;
 $title-line-height: normal;
 $title-font-weight: bold;
-$title-font: $title-font-weight $title-font-size/$title-line-height $title-font-family;
+$title-font: $title-font-weight #{$title-font-size"/"$title-line-height} $title-font-family;
 
 
 
@@ -76,7 +76,7 @@ $text-font-family: $primary-font-family;
 $text-font-size: $font-size;
 $text-line-height: normal;
 $text-font-weight: normal;
-$text-font: $text-font-weight $text-font-size/$text-line-height $text-font-family;
+$text-font: $text-font-weight #{$text-font-size"/"$text-line-height} $text-font-family;
 
 
 
@@ -105,7 +105,7 @@ $button-border-color: $border-color;
 $button-border-width: $border-width;
 $button-border-radius: $border-radius;
 
-$button-font: $text-font-weight $text-font-size/$text-line-height $text-font-family;
+$button-font: $text-font-weight #{$text-font-size"/"$text-line-height} $text-font-family;
 
 
 
@@ -122,4 +122,4 @@ $input-border-color: $border-color;
 $input-border-width: $border-width;
 $input-border-radius: $border-radius;
 
-$input-font: $text-font-weight $text-font-size/$text-line-height $text-font-family;
+$input-font: $text-font-weight #{$text-font-size"/"$text-line-height} $text-font-family;
