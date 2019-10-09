@@ -90,11 +90,11 @@ get_header();
 
 						<h2>Buttons</h2>
 
-						<a href="#" class="button light large">Large Button</a><br>
+						<a href="#" class="button full">Full-Width Button</a><br>
+						<a href="#" class="button large">Large Button</a><br>
 						<a href="#" class="button">Multi Line<br>Button</a><br>
 						<a href="#" class="button">Standard Button</a><br>
 						<a href="#" class="button" disabled>Disabled Button</a><br>
-						<a href="#" class="button full">Full-Width Button</a><br>
 						<br><br>
 
 
