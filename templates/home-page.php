@@ -69,18 +69,18 @@ get_header();
 
 						<h2>Contact Form</h2>
 
-						<input class="full" type="text" placeholder="Your Name"><br>
-						<input class="full" type="email" placeholder="Your Email"><br>
-						<input class="full" type="tel" placeholder="Phone"><br>
-						<input class="full" type="text" placeholder="City"><br>
-						<textarea class="full" cols="30" rows="1" placeholder="Notes"></textarea><br>
-						<select class="full">
-							<option value="">How did you hear about us?</option>
+						<input type="text" class="full" placeholder="Full-Width Text Input"><br>
+						<input type="text" placeholder="Text Input"><br>
+						<input type="email" placeholder="Email Input"><br>
+						<input type="tel" placeholder="Phone Input"><br>
+						<select>
+							<option value="">Select input with options</option>
 							<option value="">Option 1</option>
 							<option value="">Option 2</option>
 							<option value="">Option 3</option>
 						</select><br>
-						<a href="#" class="button">Submit</a>
+						<textarea cols="20" rows="5" placeholder="Textarea Input"></textarea><br>
+						<button>Submit</button><br>
 						<br><br>
 
 
@@ -90,10 +90,23 @@ get_header();
 
 						<h2>Buttons</h2>
 
-						<a href="#" class="button large">Large Button</a><br><br>
-						<a href="#" class="button">Multi Line<br>Button</a><br><br>
-						<a href="#" class="button">Standard Button</a><br><br>
-						<a href="#" class="button" disabled>Disabled Button</a><br><br>
+						<a href="#" class="button light large">Large Button</a><br>
+						<a href="#" class="button">Multi Line<br>Button</a><br>
+						<a href="#" class="button">Standard Button</a><br>
+						<a href="#" class="button" disabled>Disabled Button</a><br>
+						<a href="#" class="button full">Full-Width Button</a><br>
+						<br><br>
+
+
+					</div>
+					<div class="col xl-1-2">
+
+
+						<h2>Figures</h2>
+
+						<figure>
+							<img src="" alt="">
+						</figure>
 						<br><br>
 
 

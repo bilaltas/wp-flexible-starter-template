@@ -60,6 +60,7 @@ input[type="reset"] {
 
 	min-height: $finger-size;
 	padding: 0 20px;
+	margin-bottom: 20px;
 	
 	background-color: $button-bg-color;
 	color: $button-text-color;
@@ -86,6 +87,7 @@ textarea,
 select {
 	min-height: $finger-size;
 	padding: 5px 10px;
+	margin-bottom: 20px;
 
 	font: $input-font;
 	
