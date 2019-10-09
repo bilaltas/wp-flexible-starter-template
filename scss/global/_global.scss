@@ -251,6 +251,7 @@ main {
 		display: block;
 		height: auto;
 		cursor: pointer;
+		transition: 500ms;
 
 		&.fill {
 			width: 100%;
