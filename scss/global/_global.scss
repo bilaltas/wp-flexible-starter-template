@@ -240,3 +240,68 @@ main {
 	}
 
 }
+
+.video-wrapper {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+
+	& > video {
+		max-width: 100%;
+		display: block;
+		height: auto;
+		cursor: pointer;
+
+		&.fill {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	& > .video-text,
+	& > .play-button,
+	& > .pause-button {
+		position: absolute;
+		display: inline-block;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: 500ms;
+	}
+
+	& > .pause-button {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	&.full {
+		width: 100%;
+
+		& > video {
+			width: 100%;
+		}
+	}
+
+	&.bg-video {
+
+		& > video {
+			width: 100%;
+			object-fit: cover;
+			cursor: default;
+		}
+	}
+
+	&.playing {
+
+		& > .play-button {
+			opacity: 0;
+			pointer-events: none;
+		}
+
+		&:hover > .pause-button {
+			opacity: 1;
+			pointer-events: all;
+		}
+
+	}
+}

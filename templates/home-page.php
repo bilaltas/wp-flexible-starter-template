@@ -102,11 +102,133 @@ get_header();
 					<div class="col xl-1-2">
 
 
-						<h2>Figures</h2>
+						<h2>Figure</h2>
 
 						<figure>
 							<img src="<?=get_stylesheet_directory_uri()?>/screenshot.png" alt="">
 						</figure>
+						<br><br>
+
+
+					</div>
+					<div class="col xl-1-2">
+
+
+						<h2>Standard Image</h2>
+
+						<img src="<?=get_stylesheet_directory_uri()?>/screenshot.png" alt="">
+						<br><br>
+
+
+					</div>
+					<div class="col xl-1-2">
+
+
+						<h2>Standard Video</h2>
+
+						<div class="video-wrapper">
+
+							<video
+								src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_10mb.mp4" 
+								poster="http://xounts.twelve12.co/wp-content/themes/xounts/img/intro-video-background.jpg" 
+								loop playsinline webkit-playsinline></video>
+
+							<div class="play-button">
+
+								<a href="#">PLAY</a>
+
+							</div>
+
+							<div class="pause-button">
+
+								<a href="#">PAUSE</a>
+
+							</div>
+
+						</div>
+						<br><br>
+
+
+					</div>
+					<div class="col xl-1-2">
+
+
+						<h2>Section Covered Video</h2>
+
+						<div class="video-wrapper full">
+
+							<video 
+								class="fill"
+								src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_10mb.mp4" 
+								poster="http://xounts.twelve12.co/wp-content/themes/xounts/img/intro-video-background.jpg" 
+								loop playsinline webkit-playsinline></video>
+
+							<div class="play-button">
+
+								<a href="#">PLAY</a>
+
+							</div>
+
+							<div class="pause-button">
+
+								<a href="#">PAUSE</a>
+
+							</div>
+
+						</div>
+						<br><br>
+
+
+					</div>
+					<div class="col xl-1-2">
+
+
+						<h2>Autoplay Video</h2>
+
+						<div class="video-wrapper">
+
+							<video 
+								class="fill"
+								src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_10mb.mp4" 
+								poster="http://xounts.twelve12.co/wp-content/themes/xounts/img/intro-video-background.jpg" 
+								loop playsinline webkit-playsinline preload autoplay muted></video>
+
+							<div class="play-button">
+
+								<a href="#">PLAY</a>
+
+							</div>
+
+							<div class="pause-button">
+
+								<a href="#">PAUSE</a>
+
+							</div>
+
+						</div>
+						<br><br>
+
+
+					</div>
+					<div class="col xl-1-2">
+
+
+						<h2>Background Video with Text</h2>
+
+						<div class="video-wrapper bg-video">
+
+							<video
+								src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_10mb.mp4" 
+								poster="http://xounts.twelve12.co/wp-content/themes/xounts/img/intro-video-background.jpg" 
+								loop playsinline webkit-playsinline preload autoplay muted></video>
+
+							<div class="video-text">
+
+								Test content.
+
+							</div>
+
+						</div>
 						<br><br>
 
 

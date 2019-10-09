@@ -40,6 +40,7 @@ jQuery(document).ready(function($){
 	$(document).on('click', 'a[href*="#"]:not([href="#"]):not([href="#0"])', goToHash);
 
 
+
 	/*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
 
 	    * ------- Prevent moving when clicking # ------- *
@@ -49,6 +50,136 @@ jQuery(document).ready(function($){
 	$(document).on('click', 'a[href="#"]', function(e) {
 
 		e.preventDefault();
+
+	});
+
+
+
+	/*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
+
+	    * -------  Video Player  ------- *
+
+	-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
+
+	function stopVideo(video) {
+
+		var videoElement = $(video);
+
+		videoElement.prop('muted', true);
+		video.currentTime = 0;
+		video.play();
+
+	}
+
+	function playVideo(video) {
+
+		var videoElement = $(video);
+		var wrapper = videoElement.parents('.video-wrapper');
+
+
+		// Pause other videos
+		$(".video-wrapper.playing video").each(function() {
+
+			pauseVideo(this);
+
+		});
+
+		if ( videoElement.prop('muted') ) {
+			video.currentTime = 0;
+			wrapper.addClass('playing');
+		}
+
+		video.play();
+		videoElement.prop('muted', false);
+
+	}
+
+	function pauseVideo(video) {
+
+		var videoElement = $(video);
+		video.pause();
+
+	}
+
+
+	// When playing
+	$('.video-wrapper video').on('play', function() {
+
+		var video = this;
+		var videoElement = $(video);
+		var wrapper = videoElement.parents('.video-wrapper');
+
+		if ( videoElement.prop('muted') ) video.currentTime = 0;
+		if ( !videoElement.prop('muted') ) wrapper.addClass('playing');
+
+	}).on('pause', function() {
+
+		var video = this;
+		var videoElement = $(video);
+		var wrapper = videoElement.parents('.video-wrapper');
+
+		wrapper.removeClass('playing');
+
+	}).on('ended', function() {
+
+		var video = this;
+
+		stopVideo(video);
+
+	}).on('click', function(e) {
+
+		var video = this;
+		var videoElement = $(video);
+		var wrapper = videoElement.parents('.video-wrapper');
+
+		if ( wrapper.hasClass('bg-video') ) {
+			e.preventDefault();
+			return false;
+		}
+
+		if ( !video.paused && !videoElement.prop('muted') ) pauseVideo(video);
+		else if ( video.paused && !videoElement.prop('muted') ) playVideo(video);
+		else if ( !video.paused && videoElement.prop('muted') ) playVideo(video);
+
+	}).each(function() {
+
+		var video = this;
+		var videoElement = $(video);
+		var wrapper = videoElement.parents('.video-wrapper');
+
+		var playButton = wrapper.find('.play-button');
+		var pauseButton = wrapper.find('.pause-button');
+		var stopButton = wrapper.find('.stop-button');
+		var restartButton = wrapper.find('.restart-button');
+
+		playButton.click(function(e) {
+
+			playVideo(video);
+			e.preventDefault();
+
+		});
+
+		pauseButton.click(function(e) {
+
+			pauseVideo(video);
+			e.preventDefault();
+
+		});
+
+		stopButton.click(function(e) {
+
+			stopVideo(video);
+			e.preventDefault();
+
+		});
+
+		restartButton.click(function(e) {
+
+			stopVideo(video);
+			playVideo(video);
+			e.preventDefault();
+
+		});
 
 	});
 
