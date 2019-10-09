@@ -302,6 +302,14 @@ main {
 		}
 	}
 
+	&:not(.playing):not(.bg-video) {
+
+		& > video[autoplay][muted] {
+			opacity: 0.6;
+		}
+
+	}
+
 	&.playing {
 
 		& > .play-button {

@@ -183,7 +183,7 @@ get_header();
 					<div class="col xl-1-2">
 
 
-						<h2>Autoplay Video</h2>
+						<h2>Playing Poster Video</h2>
 
 						<div class="video-wrapper">
 
