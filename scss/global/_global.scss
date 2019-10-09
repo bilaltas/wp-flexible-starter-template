@@ -55,6 +55,7 @@ input[type="reset"] {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	cursor: pointer;
 
 	font: $button-font;
 
@@ -117,13 +118,14 @@ textarea {
 }
 
 select {
-	//appearance: none;
+	cursor: pointer;
 }
 
 [disabled] {
 	opacity: 0.5;
 	pointer-events: none;
 	user-select: none;
+	cursor: not-allowed;
 }
 
 h1, .h1-size,
