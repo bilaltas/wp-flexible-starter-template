@@ -105,7 +105,7 @@ get_header();
 						<h2>Figures</h2>
 
 						<figure>
-							<img src="" alt="">
+							<img src="<?=get_stylesheet_directory_uri()?>/screenshot.png" alt="">
 						</figure>
 						<br><br>
 
