@@ -99,9 +99,15 @@ select {
 		color: $color-light;
 	}
 
+	&.large {
+		font-size: $font-size-largest;
+		padding: 10px 20px;
+	}
+
 	&.full {
 		width: 100%;
 	}
+
 }
 
 textarea {
@@ -110,6 +116,12 @@ textarea {
 
 select {
 	//appearance: none;
+}
+
+[disabled] {
+	opacity: 0.5;
+	pointer-events: none;
+	user-select: none;
 }
 
 h1, .h1-size,
@@ -177,6 +189,50 @@ main {
 
 		}
 
+	}
+
+}
+
+.text {
+
+	&-color {
+
+		&-dark {
+			color: $color-dark;
+		}
+
+		&-darker {
+			color: $color-darker;
+		}
+
+		&-darkest {
+			color: $color-darkest;
+		}
+
+		&-light {
+			color: $color-light;
+		}
+
+		&-lighter {
+			color: $color-lighter;
+		}
+
+		&-lightest {
+			color: $color-lightest;
+		}
+
+	}
+
+}
+
+.font {
+
+	&-primary {
+		font-family: $primary-font-family;
+	}
+
+	&-secondary {
+		font-family: $secondary-font-family;
 	}
 
 }
