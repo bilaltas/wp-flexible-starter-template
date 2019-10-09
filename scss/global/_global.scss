@@ -14,10 +14,7 @@ html, body {
 
 body {
 	color: $text-color;
-	font-family: $text-font-family;
-	font-size: $text-font-size;
-	font-weight: $text-font-weight;
-	line-height: $text-line-height;
+	font: $text-font;
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
@@ -46,9 +43,7 @@ a {
 
 p {
 	color: $text-color;
-	font-size: $text-font-size;
-	font-weight: $text-font-weight;
-	line-height: $text-line-height;
+	font: $text-font;
 }
 
 .button,
@@ -61,14 +56,16 @@ input[type="reset"] {
 	justify-content: center;
 	text-align: center;
 
+	font: $button-font;
+
 	min-height: $finger-size;
 	padding: 0 20px;
 	
-	background-color: $color-darkest;
-	color: $bg-color;
+	background-color: $button-bg-color;
+	color: $button-text-color;
 
-	border: 1px solid $border-color;
-	border-radius: $border-radius;
+	border: $button-border-width solid $button-border-color;
+	border-radius: $button-border-radius;
 
 	&:hover {
 		background-color: $color-light;
@@ -89,8 +86,13 @@ textarea {
 	min-height: $finger-size;
 	padding: 5px 10px;
 
-	border: 1px solid $border-color;
-	border-radius: $border-radius;
+	font: $input-font;
+	
+	background-color: $input-bg-color;
+	color: $input-text-color;
+
+	border: $input-border-width solid $input-border-color;
+	border-radius: $input-border-radius;
 
 	&::placeholder {
 		color: $color-light;
@@ -112,10 +114,7 @@ h4, .h4-size,
 h5, .h5-size,
 h6, .h6-size {
 	color: $title-color;
-	font-family: $title-font-family;
-	font-size: $title-font-size;
-	line-height: $title-line-height;
-	font-weight: $title-font-weight;
+	font: $title-font;
 }
 
 h2, .h2-size {
@@ -168,9 +167,7 @@ main {
 
 			& > li {
 				color: $text-color;
-				font-size: $text-font-size;
-				font-weight: $text-font-weight;
-				line-height: $text-line-height;
+				font: $text-font;
 			}
 
 		}
