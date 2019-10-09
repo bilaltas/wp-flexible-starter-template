@@ -59,7 +59,7 @@ $title-font-family: $secondary-font-family;
 $title-font-size: $font-size-big;
 $title-line-height: normal;
 $title-font-weight: bold;
-$title-font: $title-font-weight $title-font-size/$title-font-weight $title-font-family;
+$title-font: $title-font-weight $title-font-size/$title-line-height $title-font-family;
 
 
 
