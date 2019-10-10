@@ -227,6 +227,18 @@ main {
 
 	}
 
+	&-transform {
+
+		&-capitalize {
+			text-transform: capitalize;
+		}
+
+		&-uppercase {
+			text-transform: uppercase;
+		}
+
+	}
+
 }
 
 .font {
@@ -237,6 +249,30 @@ main {
 
 	&-secondary {
 		font-family: $secondary-font-family;
+	}
+
+	&-size {
+
+		&-smaller {
+			font-size: $font-size-smaller;
+		}
+
+		&-small {
+			font-size: $font-size-small;
+		}
+
+		&-large {
+			font-size: $font-size-large;
+		}
+
+		&-larger {
+			font-size: $font-size-larger;
+		}
+
+		&-largest {
+			font-size: $font-size-largest;
+		}
+
 	}
 
 }
