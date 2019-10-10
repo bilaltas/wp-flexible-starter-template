@@ -20,7 +20,7 @@ $sample_hd_video_thumb = "http://commondatastorage.googleapis.com/gtv-videos-buc
 
 
 	</div>
-	<div class="col xl-1-2">
+	<div class="col xl-1-2" style="font-size: 40px; line-height: normal;">
 
 
 		<h2>Fonts</h2>
