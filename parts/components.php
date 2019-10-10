@@ -1,3 +1,9 @@
+<?php
+
+$sample_hd_video = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
+$sample_hd_video_thumb = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg";
+
+?>
 <div class="wrap xl-gutter-40">
 	<div class="col xl-1-2">
 
@@ -115,8 +121,8 @@
 		<div class="video-wrapper">
 
 			<video
-				src="https://sample-videos.com/video123/mp4/240/big_buck_bunny_240p_30mb.mp4" 
-				poster="<?=get_stylesheet_directory_uri()?>/screenshot.png" 
+				src="<?=$sample_hd_video?>" 
+				poster="<?=$sample_hd_video_thumb?>" 
 				loop playsinline webkit-playsinline></video>
 
 			<div class="play-button">
@@ -145,8 +151,8 @@
 
 			<video 
 				class="fill"
-				src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_10mb.mp4" 
-				poster="<?=get_stylesheet_directory_uri()?>/screenshot.png" 
+				src="<?=$sample_hd_video?>" 
+				poster="<?=$sample_hd_video_thumb?>" 
 				loop playsinline webkit-playsinline></video>
 
 			<div class="play-button">
@@ -175,8 +181,8 @@
 
 			<video 
 				class="fill"
-				src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_10mb.mp4" 
-				poster="<?=get_stylesheet_directory_uri()?>/screenshot.png" 
+				src="<?=$sample_hd_video?>" 
+				poster="<?=$sample_hd_video_thumb?>" 
 				loop playsinline webkit-playsinline preload autoplay muted></video>
 
 			<div class="play-button">
@@ -204,8 +210,8 @@
 		<div class="video-wrapper bg-video">
 
 			<video
-				src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_10mb.mp4" 
-				poster="<?=get_stylesheet_directory_uri()?>/screenshot.png" 
+				src="<?=$sample_hd_video?>" 
+				poster="<?=$sample_hd_video_thumb?>" 
 				loop playsinline webkit-playsinline preload autoplay muted></video>
 
 			<div class="video-text">
