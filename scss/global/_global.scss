@@ -63,12 +63,12 @@ input[type="reset"] {
 	max-width: 100%;
 	padding: 0 20px;
 	margin-bottom: 10px;
-	
-	background-color: $button-bg-color;
-	color: $button-text-color;
 
 	border: $button-border-width solid $button-border-color;
 	border-radius: $button-border-radius;
+	
+	background-color: $button-bg-color;
+	color: $button-text-color;
 
 	&:hover {
 		background-color: $color-light;
@@ -94,12 +94,12 @@ select {
 	margin-bottom: 10px;
 
 	font: $input-font;
-	
-	background-color: $input-bg-color;
-	color: $input-text-color;
 
 	border: $input-border-width solid $input-border-color;
 	border-radius: $input-border-radius;
+	
+	background-color: $input-bg-color;
+	color: $input-text-color;
 
 	&::placeholder {
 		color: $color-light;
