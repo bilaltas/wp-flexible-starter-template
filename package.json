@@ -1,11 +1,11 @@
 {
   "name": "twelve12",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Twelve12 Development Packages",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "4.0.0",
+    "gulp": "latest",
     "gulp-sass": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-plumber": "latest",
