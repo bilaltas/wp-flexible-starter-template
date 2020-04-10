@@ -303,8 +303,6 @@ main {
 	justify-content: center;
 	align-items: center;
 
-	background-color: transparentize($color-darkest, 0.5);
-
 	opacity: 0;
 	pointer-events: none;
 	transition: 500ms;
@@ -314,14 +312,29 @@ main {
 		pointer-events: all;
 	}
 
+	& > .overlay {
+		position: absolute;
+		z-index: 4;
+		top: inherit;
+		left: inherit;
+		right: inherit;
+		bottom: inherit;
+		width: inherit;
+		height: inherit;
+		background-color: transparentize($color-darkest, 0.5);
+	}
+
 	& > .wrap {
 		max-height: 90vh;
 		overflow-y: auto;
 		background-color: $color-lightest;
+		position: relative;
+		z-index: 5;
 	}
 
 	.close-button {
 		position: absolute;
+		z-index: 5;
 		top: 10px;
 		right: 20px;
 

@@ -26,6 +26,23 @@
 
 				</div>
 			</div>
+			<div class="overlay"></div>
+		</div>
+
+		<div id="sample-popup-not-closeable-by-overlay" class="popup no-overlay-close">
+			<div class="close-button"><a href="#" close-popup>&times;</a></div>
+			<div class="wrap xl-1 container xl-paddingx-20 xl-paddingy-20">
+				<div class="col">
+
+					<div class="h2-size">Popup Content Here</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repudiandae quisquam tempora aperiam velit a vel autem architecto ea. Magni quaerat consequatur voluptatibus itaque. Id tenetur dolorum labore necessitatibus officia?</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repudiandae quisquam tempora aperiam velit a vel autem architecto ea. Magni quaerat consequatur voluptatibus itaque. Id tenetur dolorum labore necessitatibus officia?</p>
+
+					<a href="#" class="button" close-popup>Close Popup</a>
+
+				</div>
+			</div>
+			<div class="overlay"></div>
 		</div>
 
 

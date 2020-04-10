@@ -76,7 +76,7 @@ jQuery(document).ready(function($){
 
 	});
 
-	$(document).on('click', '[close-popup]', function() {
+	$(document).on('click', '[close-popup], .popup:not(.no-overlay-close) > .overlay', function() {
 
 		// Close all popups
 		$('.popup').removeClass('active');

@@ -95,13 +95,14 @@ $sample_hd_video_thumb = "http://commondatastorage.googleapis.com/gtv-videos-buc
 
 
 		<h2>Popup Sample</h2>
-		<p>Popups are located at <b>footer.php</b>. To create a popup trigger, add "<b>data-popup</b>" attribute to any element.</p>
+		<p>Popups are located at <b>footer.php</b>. To create a popup trigger, add "<b>data-popup</b>" attribute to any element. If you don't want popup to be closed by clicking the overlay, add "<b>no-overlay-close</b>" class to the popup.</p>
 		<p>Examples: <br>
 		&lt;a href="#" <b>data-popup="popup_ID"</b>&gt; Popup Open &lt;/a&gt; <br>
 		&lt;a href="#" <b>close-popup</b>&gt; &times; &lt;/a&gt;
 		</p>
 
-		<a href="#" class="button" data-popup="sample-popup">Open Popup</a><br>
+		<a href="#" class="button" data-popup="sample-popup">Open Popup which is closeable by overlay</a>
+		<a href="#" class="button" data-popup="sample-popup-not-closeable-by-overlay">Open Popup which is NOT closeable by overlay</a>
 		<br><br>
 
 
