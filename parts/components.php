@@ -91,10 +91,25 @@ $sample_hd_video_thumb = "http://commondatastorage.googleapis.com/gtv-videos-buc
 
 
 	</div>
+	<div class="col xl-1-1">
+
+
+		<h2>Popup Sample</h2>
+		<p>Popups are located at <b>footer.php</b>. To create a popup trigger, add "<b>data-popup</b>" attribute to any element.</p>
+		<p>Examples: <br>
+		&lt;a href="#" <b>data-popup="popup_ID"</b>&gt; Popup Open &lt;/a&gt; <br>
+		&lt;a href="#" <b>close-popup</b>&gt; &times; &lt;/a&gt;
+		</p>
+
+		<a href="#" class="button" data-popup="sample-popup">Open Popup</a><br>
+		<br><br>
+
+
+	</div>
 	<div class="col xl-1-2">
 
 
-		<h2>Figure</h2>
+		<h2>Figure (Image fits the wrapper)</h2>
 
 		<figure>
 			<img src="<?=get_stylesheet_directory_uri()?>/screenshot.png" alt="">
@@ -106,7 +121,7 @@ $sample_hd_video_thumb = "http://commondatastorage.googleapis.com/gtv-videos-buc
 	<div class="col xl-1-2">
 
 
-		<h2>Standard Image</h2>
+		<h2>Standard Image (Free Image)</h2>
 
 		<img src="<?=get_stylesheet_directory_uri()?>/screenshot.png" alt="">
 		<br><br>
@@ -205,7 +220,7 @@ $sample_hd_video_thumb = "http://commondatastorage.googleapis.com/gtv-videos-buc
 	<div class="col xl-1-2">
 
 
-		<h2>Background Video with Text</h2>
+		<h2>Background Video with Text in Middle</h2>
 
 		<div class="video-wrapper bg-video">
 
@@ -217,6 +232,29 @@ $sample_hd_video_thumb = "http://commondatastorage.googleapis.com/gtv-videos-buc
 			<div class="video-text">
 
 				Test content.
+
+			</div>
+
+		</div>
+		<br><br>
+
+
+	</div>
+	<div class="col xl-1-2">
+
+
+		<h2>Background Video with Content</h2>
+
+		<div class="video-wrapper bg-video">
+
+			<video
+				src="<?=$sample_hd_video?>" 
+				poster="<?=$sample_hd_video_thumb?>" 
+				loop playsinline webkit-playsinline preload autoplay muted></video>
+
+			<div class="video-content">
+
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod doloribus minima quidem ab in, suscipit vel hic aut pariatur error totam, dignissimos sit rerum assumenda commodi, rem dicta excepturi! Laborum!
 
 			</div>
 

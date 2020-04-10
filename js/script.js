@@ -57,6 +57,39 @@ jQuery(document).ready(function($){
 
 	/*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
 
+	    * ------- Popups ------- *
+
+	-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
+
+	$(document).on('click', '[data-popup]', function() {
+
+		var popupID = $(this).attr('data-popup');
+
+		// Disable scrolling
+		$('body').addClass('no-scroll');
+
+		// Close all popups first
+		$('.popup').removeClass('active');
+
+		// Open the selected popup
+		$('#' + popupID).addClass('active');
+
+	});
+
+	$(document).on('click', '[close-popup]', function() {
+
+		// Close all popups
+		$('.popup').removeClass('active');
+
+		// Enable scrolling
+		$('body').removeClass('no-scroll');
+
+	});
+
+
+
+	/*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
+
 	    * -------  Video Player  ------- *
 
 	-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
