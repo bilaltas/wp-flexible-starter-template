@@ -6,18 +6,15 @@ Author URI: https://www.twelve12.com
 Version: 4.0.2
 */
 
-
 // Setting variables and mixins
 @import "scss/config/_variables";
 @import "scss/config/_mixins";
 //@import "scss/config/_animations";
 
-
 // Tools - Make sure these are the latest versions
 @import "scss/tools/_normalize";
 @import "scss/tools/flexible-gs/_flexible-grid-system";
 //@import "scss/tools/slick/slick.scss"; // Uncomment if slider needed (Don't forget calling the JS file in 'functions.php')
-
 
 // Global Components - Add more components if needed
 @import "scss/global/_fonts";
@@ -26,10 +23,8 @@ Version: 4.0.2
 @import "scss/global/_navigation";
 @import "scss/global/_footer";
 
-
 // Pages - The page specific styles
 @import "scss/pages/_home";
-
 
 // Mobile Corrections
 @import "scss/global/_mobile";
