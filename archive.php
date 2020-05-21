@@ -41,8 +41,8 @@
 
 			</div>
 		</div>
-		<div class="wrap paginate">
-			<div class="col">
+		<div class="wrap paginate container">
+			<div class="col xl-center xl-marginy-50">
 				<?=paginate_links()?>
 			</div>
 		</div>
