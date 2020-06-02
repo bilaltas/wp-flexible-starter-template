@@ -10,17 +10,15 @@ $color-darker: #333333;
 $color-darkest: #000000;
 
 // Light Colors
-$color-light: #7B7B7B;
-$color-lighter: #EEEEEE;
-$color-lightest: #FFFFFF;
+$color-light: #7b7b7b;
+$color-lighter: #eeeeee;
+$color-lightest: #ffffff;
 
 // Other Colors
 $bg-color: $color-lightest;
 $header-bg-color: $color-darkest;
 $footer-bg-color: $color-darker;
 // Add as many as you need...
-
-
 
 /*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
 
@@ -33,16 +31,14 @@ $footer-height: 80px;
 $container-width: 1234px;
 $finger-size: 44px; // Buttons and inputs sizes
 
-
-
 /*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
 
 	* ------- Typography ------- *
 
 -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
-$primary-font-family: 'Roboto', sans-serif;
-$secondary-font-family: 'Open Sans', serif;
+$primary-font-family: "Roboto", sans-serif;
+$secondary-font-family: "Open Sans", serif;
 
 $font-size-smaller: 12px;
 $font-size-small: 14px;
@@ -50,8 +46,6 @@ $font-size: 16px;
 $font-size-large: 18px;
 $font-size-larger: 20px;
 $font-size-largest: 24px;
-
-
 
 /*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
 
@@ -64,9 +58,7 @@ $title-font-family: $secondary-font-family;
 $title-font-size: $font-size-larger;
 $title-line-height: normal;
 $title-font-weight: bold;
-$title-font: $title-font-weight #{$title-font-size"/"$title-line-height} $title-font-family;
-
-
+$title-font: $title-font-weight #{$title-font-size "/" $title-line-height} $title-font-family;
 
 /*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
 
@@ -79,9 +71,7 @@ $text-font-family: $primary-font-family;
 $text-font-size: $font-size;
 $text-line-height: normal;
 $text-font-weight: normal;
-$text-font: $text-font-weight #{$text-font-size"/"$text-line-height} $text-font-family;
-
-
+$text-font: $text-font-weight #{$text-font-size "/" $text-line-height} $text-font-family;
 
 /*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
 
@@ -92,8 +82,6 @@ $text-font: $text-font-weight #{$text-font-size"/"$text-line-height} $text-font-
 $border-color: $color-dark;
 $border-width: 1px;
 $border-radius: 3px;
-
-
 
 /*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
 
@@ -108,9 +96,7 @@ $button-border-color: $border-color;
 $button-border-width: $border-width;
 $button-border-radius: $border-radius;
 
-$button-font: $text-font-weight #{$text-font-size"/"$text-line-height} $text-font-family;
-
-
+$button-font: $text-font-weight #{$text-font-size "/" $text-line-height} $text-font-family;
 
 /*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
 
@@ -125,4 +111,4 @@ $input-border-color: $border-color;
 $input-border-width: $border-width;
 $input-border-radius: $border-radius;
 
-$input-font: $text-font-weight #{$text-font-size"/"$text-line-height} $text-font-family;
+$input-font: $text-font-weight #{$text-font-size "/" $text-line-height} $text-font-family;
