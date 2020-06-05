@@ -6,12 +6,11 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "latest",
-    "gulp-sass": "latest",
     "gulp-autoprefixer": "latest",
-    "gulp-plumber": "latest",
+    "gulp-cli": "latest",
+    "gulp-sass": "latest",
     "gulp-sass-lint": "latest",
-    "gulp-sourcemaps": "latest",
-    "gulp-cli": "latest"
+    "gulp-sourcemaps": "latest"
   },
   "keywords": [],
   "author": "Twelve12",
@@ -21,8 +20,8 @@
     "start": "rm -f style.css && rm -f style.css.map && gulp"
   },
   "browserslist": [
-    "ff > 2", 
-    "> 2%", 
+    "ff > 2",
+    "> 2%",
     "ie 8"
   ]
 }

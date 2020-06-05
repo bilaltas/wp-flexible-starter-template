@@ -2,10 +2,9 @@
 
 var gulp        = require('gulp'),
     sass        = require('gulp-sass'),
-    prefix      = require('gulp-autoprefixer'),
-    plumber     = require('gulp-plumber'),
     sassLint    = require('gulp-sass-lint'),
-    sourcemaps  = require('gulp-sourcemaps');
+    sourcemaps  = require('gulp-sourcemaps'),
+	prefix      = require('gulp-autoprefixer');
 
 
 // SETTINGS
@@ -25,11 +24,11 @@ gulp.task('styles', function() {
 		.pipe(sass(sassOptions))
 		.pipe(prefix())
 		.pipe(sourcemaps.write('./'))
-		.pipe(gulp.dest('./'))
+		.pipe(gulp.dest('./'));
 });
 
 gulp.task('sass-lint', function() {
-	gulp.src('scss/**/*.scss')
+	return gulp.src('scss/**/*.scss')
 		.pipe(sassLint())
 		.pipe(sassLint.format())
 		.pipe(sassLint.failOnError());
