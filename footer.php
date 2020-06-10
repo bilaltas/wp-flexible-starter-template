@@ -13,7 +13,7 @@
 
 
 		<!-- Popups -->
-		<div id="sample-popup" class="popup">
+		<div id="sample" class="popup">
 			<div class="close-button"><a href="#" close-popup>&times;</a></div>
 			<div class="wrap xl-1 container xl-paddingx-20 xl-paddingy-20">
 				<div class="col">
@@ -29,7 +29,7 @@
 			<div class="overlay"></div>
 		</div>
 
-		<div id="sample-popup-not-closeable-by-overlay" class="popup no-overlay-close">
+		<div id="sample-not-closeable-by-overlay" class="popup no-overlay-close">
 			<div class="close-button"><a href="#" close-popup>&times;</a></div>
 			<div class="wrap xl-1 container xl-paddingx-20 xl-paddingy-20">
 				<div class="col">

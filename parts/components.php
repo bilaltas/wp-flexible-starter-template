@@ -101,8 +101,8 @@ $sample_hd_video_thumb = "http://commondatastorage.googleapis.com/gtv-videos-buc
 		&lt;a href="#" <b>close-popup</b>&gt; &times; &lt;/a&gt;
 		</p>
 
-		<a href="#" class="button" data-popup="sample-popup">Open Popup which is closeable by overlay</a>
-		<a href="#" class="button" data-popup="sample-popup-not-closeable-by-overlay">Open Popup which is NOT closeable by overlay</a>
+		<a href="#" class="button" data-popup="sample">Open Popup which is closeable by overlay</a>
+		<a href="#" class="button" data-popup="sample-not-closeable-by-overlay">Open Popup which is NOT closeable by overlay</a>
 		<br><br>
 
 
