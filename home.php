@@ -46,6 +46,13 @@
 				</article>
 
 			<?php endwhile; ?>
+			
+
+			<?php if ( !have_posts() ) : ?>
+			
+				<p>No content found here.</p>
+			
+			<?php endif; ?>
 
 
 			</div>
