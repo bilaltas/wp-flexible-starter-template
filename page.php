@@ -8,9 +8,9 @@
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php if ( has_post_thumbnail(get_the_id()) ) { ?>
+				<?php if ( has_post_thumbnail() ) { ?>
 				<figure>
-					<img src="<?=get_the_post_thumbnail_url(get_the_id(), 'medium')?>" alt=""/>
+					<?php the_post_thumbnail('medium'); ?>
 				</figure>
 				<?php } ?>
 
