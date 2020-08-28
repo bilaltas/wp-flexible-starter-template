@@ -5,8 +5,12 @@
 -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
 nav {
+
 	& > ul,
 	& > div > ul {
+		padding-left: 0;
+		margin: 0;
+
 		& > li {
 			display: inline-block;
 
@@ -14,6 +18,7 @@ nav {
 			}
 		}
 	}
+
 }
 
 /*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
@@ -21,3 +26,21 @@ nav {
 	* ------- Mobile Menu ------- *
 
 -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
+
+#mobile-menu {
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	nav {
+		& > ul,
+		& > div > ul {
+			& > li {
+				display: block;
+	
+				& > a {
+				}
+			}
+		}
+	}
+
+}

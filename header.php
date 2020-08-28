@@ -16,8 +16,11 @@
 					<div class="col">
 						<a href="<?=home_url()?>" title="<?php bloginfo('name'); ?> Home">LOGO</a>
 					</div>
-					<div class="col xl-right">
+					<div class="col xl-right md-hidden">
 						<nav><?php sitename_menu() ?></nav>
+					</div>
+					<div class="col xl-right xl-hidden md-not-hidden">
+						<a href="#" data-popup="mobile-menu">Open Mobile Menu</a>
 					</div>
 				</div>
 			</header>
