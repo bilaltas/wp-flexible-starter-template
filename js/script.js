@@ -129,23 +129,10 @@ jQuery(document).ready(function ($) {
 	function playVideo(video) {
 
 		var videoElement = $(video);
-		var wrapper = videoElement.parents('.video-wrapper');
 
-
-		// Pause other videos
-		$(".video-wrapper.playing video").each(function () {
-
-			pauseVideo(this);
-
-		});
-
-		if (videoElement.prop('muted')) {
-			video.currentTime = 0;
-			wrapper.addClass('playing');
-		}
-
-		video.play();
 		videoElement.prop('muted', false);
+		if (videoElement.prop('muted')) video.currentTime = 0;
+		video.play();
 
 	}
 
@@ -157,85 +144,89 @@ jQuery(document).ready(function ($) {
 
 
 	// When playing
-	$('.video-wrapper video').on('play', function () {
+	$('.video-wrapper video')
+		.on('play', function () {
 
-		var video = this;
-		var videoElement = $(video);
-		var wrapper = videoElement.parents('.video-wrapper');
+			var video = this;
+			var videoElement = $(video);
+			var wrapper = videoElement.parents('.video-wrapper');
+			var otherVideoElements = $('.video-wrapper video').not(videoElement);
 
-		if (videoElement.prop('muted')) video.currentTime = 0;
-		if (!videoElement.prop('muted')) wrapper.addClass('playing');
+			// Pause all other playing videos (with sound)
+			otherVideoElements.each(function () {
 
-	}).on('pause', function () {
+				if (!$(this).prop('muted')) this.pause();
 
-		var video = this;
-		var videoElement = $(video);
-		var wrapper = videoElement.parents('.video-wrapper');
+			});
 
-		wrapper.removeClass('playing');
+			if (!videoElement.prop('muted')) wrapper.addClass('playing');
 
-	}).on('ended', function () {
+		}).on('pause', function () {
 
-		var video = this;
+			var video = this;
+			var videoElement = $(video);
+			var wrapper = videoElement.parents('.video-wrapper');
 
-		stopVideo(video);
+			wrapper.removeClass('playing');
 
-	}).on('click', function (e) {
+		}).on('ended', function () {
 
-		var video = this;
-		var videoElement = $(video);
-		var wrapper = videoElement.parents('.video-wrapper');
-
-		if (wrapper.hasClass('bg-video')) {
-			e.preventDefault();
-			return false;
-		}
-
-		if (!video.paused && !videoElement.prop('muted')) pauseVideo(video);
-		else if (video.paused && !videoElement.prop('muted')) playVideo(video);
-		else if (!video.paused && videoElement.prop('muted')) playVideo(video);
-
-	}).each(function () {
-
-		var video = this;
-		var videoElement = $(video);
-		var wrapper = videoElement.parents('.video-wrapper');
-
-		var playButton = wrapper.find('.play-button');
-		var pauseButton = wrapper.find('.pause-button');
-		var stopButton = wrapper.find('.stop-button');
-		var restartButton = wrapper.find('.restart-button');
-
-		playButton.click(function (e) {
-
-			playVideo(video);
-			e.preventDefault();
-
-		});
-
-		pauseButton.click(function (e) {
-
-			pauseVideo(video);
-			e.preventDefault();
-
-		});
-
-		stopButton.click(function (e) {
-
+			var video = this;
 			stopVideo(video);
-			e.preventDefault();
+
+		}).on('click', function (e) {
+
+			var video = this;
+			var videoElement = $(video);
+			var wrapper = videoElement.parents('.video-wrapper');
+
+			if (videoElement.attr('controls') || wrapper.hasClass('bg-video')) return;
+
+			if (!video.paused && !videoElement.prop('muted')) pauseVideo(video);
+			else if (video.paused && !videoElement.prop('muted')) playVideo(video);
+			else if (!video.paused && videoElement.prop('muted')) playVideo(video);
+
+		}).each(function () {
+
+			var video = this;
+			var videoElement = $(video);
+			var wrapper = videoElement.parents('.video-wrapper');
+
+			var playButton = wrapper.find('.play-button');
+			var pauseButton = wrapper.find('.pause-button');
+			var stopButton = wrapper.find('.stop-button');
+			var restartButton = wrapper.find('.restart-button');
+
+			playButton.click(function (e) {
+
+				playVideo(video);
+				e.preventDefault();
+
+			});
+
+			pauseButton.click(function (e) {
+
+				pauseVideo(video);
+				e.preventDefault();
+
+			});
+
+			stopButton.click(function (e) {
+
+				stopVideo(video);
+				e.preventDefault();
+
+			});
+
+			restartButton.click(function (e) {
+
+				stopVideo(video);
+				playVideo(video);
+				e.preventDefault();
+
+			});
 
 		});
-
-		restartButton.click(function (e) {
-
-			stopVideo(video);
-			playVideo(video);
-			e.preventDefault();
-
-		});
-
-	});
 
 
 

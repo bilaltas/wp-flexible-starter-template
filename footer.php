@@ -23,6 +23,7 @@
 						<video 
 							class="fill"
 							src=""
+							controls
 							loop playsinline webkit-playsinline></video>
 
 						<div class="play-button">

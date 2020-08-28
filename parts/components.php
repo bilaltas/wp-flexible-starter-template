@@ -267,6 +267,37 @@ $sample_hd_video_thumb = "http://commondatastorage.googleapis.com/gtv-videos-buc
 	<div class="col xl-1-2">
 
 
+		<h2>Video with Controls</h2>
+
+		<div class="video-wrapper full">
+
+			<video 
+				class="fill"
+				src="<?=$sample_hd_video?>" 
+				poster="<?=$sample_hd_video_thumb?>" 
+				controls
+				loop playsinline webkit-playsinline></video>
+
+			<div class="play-button">
+
+				<a href="#">PLAY</a>
+
+			</div>
+
+			<div class="pause-button">
+
+				<a href="#">PAUSE</a>
+
+			</div>
+
+		</div>
+		<br><br>
+
+
+	</div>
+	<div class="col xl-1-2">
+
+
 		<h2>Video Popup</h2>
 
 		<a href="#" class="button" data-popup="video" data-src="<?=$sample_hd_video?>" data-poster="<?=$sample_hd_video_thumb?>">Open Video Popup</a>
