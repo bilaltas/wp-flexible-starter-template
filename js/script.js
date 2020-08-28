@@ -120,7 +120,8 @@ jQuery(document).ready(function ($) {
 
 		videoElement.prop('muted', true);
 		video.currentTime = 0;
-		video.play();
+		if (videoElement.prop('autoplay')) video.play();
+		else video.pause();
 
 	}
 
@@ -150,14 +151,23 @@ jQuery(document).ready(function ($) {
 			var wrapper = videoElement.parents('.video-wrapper');
 			var otherVideoElements = $('.video-wrapper video').not(videoElement);
 
-			// Pause all other playing videos (with sound)
-			otherVideoElements.each(function () {
 
-				if (!$(this).prop('muted')) this.pause();
+			// If current video not muted
+			if (!videoElement.prop('muted')) {
 
-			});
 
-			if (!videoElement.prop('muted')) wrapper.addClass('playing');
+				// Pause all other not muted playing videos
+				otherVideoElements.each(function () {
+
+					if (!$(this).prop('muted')) this.pause();
+
+				});
+
+
+				// Add playing class
+				wrapper.addClass('playing');
+
+			}
 
 		}).on('pause', function () {
 
