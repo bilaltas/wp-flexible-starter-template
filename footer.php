@@ -18,7 +18,7 @@
 			<div class="wrap">
 				<div class="col xl-1-2 xl-paddingx-20 xl-paddingy-20 sm-1-1 xl-center">
 
-					<nav class="mobile"><?php testsite_menu() ?></nav>
+					<nav class="mobile"><?php sitename_menu() ?></nav>
 
 				</div>
 			</div>
