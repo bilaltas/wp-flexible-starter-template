@@ -86,8 +86,6 @@ jQuery(document).ready(function ($) {
 			// AutoPlay
 			if (autoplay) video.trigger('play');
 
-			console.log(src, poster, autoplay);
-
 		}
 
 		// Open the selected popup
