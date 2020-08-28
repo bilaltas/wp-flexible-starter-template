@@ -13,6 +13,37 @@
 
 
 		<!-- Popups -->
+		<div id="video" class="popup">
+			<div class="close-button"><a href="#" close-popup>&times;</a></div>
+			<div class="wrap xl-1 container xl-paddingx-20 xl-paddingy-20">
+				<div class="col">
+
+					<div class="video-wrapper full">
+
+						<video 
+							class="fill"
+							src=""
+							loop playsinline webkit-playsinline></video>
+
+						<div class="play-button">
+
+							<a href="#">PLAY</a>
+
+						</div>
+
+						<div class="pause-button">
+
+							<a href="#">PAUSE</a>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<div class="overlay"></div>
+		</div>
+
 		<div id="sample" class="popup">
 			<div class="close-button"><a href="#" close-popup>&times;</a></div>
 			<div class="wrap xl-1 container xl-paddingx-20 xl-paddingy-20">

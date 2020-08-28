@@ -264,4 +264,16 @@ $sample_hd_video_thumb = "http://commondatastorage.googleapis.com/gtv-videos-buc
 
 
 	</div>
+	<div class="col xl-1-2">
+
+
+		<h2>Video Popup</h2>
+
+		<a href="#" class="button" data-popup="video" data-src="<?=$sample_hd_video?>" data-poster="<?=$sample_hd_video_thumb?>">Open Video Popup</a>
+
+		<a href="#" class="button" data-popup="video" data-src="<?=$sample_hd_video?>" data-poster="<?=$sample_hd_video_thumb?>" data-autoplay>Open Autoplay Video Popup</a>
+		<br><br>
+
+
+	</div>
 </div>

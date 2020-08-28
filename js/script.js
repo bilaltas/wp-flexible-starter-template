@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){
+jQuery(document).ready(function ($) {
 
 	/*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
 
@@ -9,30 +9,30 @@ jQuery(document).ready(function($){
 	function goToHash(event) {
 		// On-page links
 		if (
-		  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname
+			location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname
 		) {
-		  // Figure out element to scroll to
-		  var target = $(this.hash);
-		  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-		  // Does a scroll target exist?
-		  if (target.length) {
-		    // Only prevent default if animation is actually gonna happen
-		    event.preventDefault();
-		    $('html, body').animate({
-		      scrollTop: target.offset().top
-		    }, 500, function() {
-		      // Callback after animation
-		      // Must change focus!
-		      var $target = $(target);
-		      $target.focus();
-		      if ($target.is(":focus")) { // Checking if the target was focused
-		        return false;
-		      } else {
-		        $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-		        $target.focus(); // Set focus again
-		      }
-		    });
-		  }
+			// Figure out element to scroll to
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			// Does a scroll target exist?
+			if (target.length) {
+				// Only prevent default if animation is actually gonna happen
+				event.preventDefault();
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 500, function () {
+					// Callback after animation
+					// Must change focus!
+					var $target = $(target);
+					$target.focus();
+					if ($target.is(":focus")) { // Checking if the target was focused
+						return false;
+					} else {
+						$target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+						$target.focus(); // Set focus again
+					}
+				});
+			}
 		}
 	}
 
@@ -47,7 +47,7 @@ jQuery(document).ready(function($){
 
 	-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
-	$(document).on('click', 'a[href="#"]', function(e) {
+	$(document).on('click', 'a[href="#"]', function (e) {
 
 		e.preventDefault();
 
@@ -61,9 +61,10 @@ jQuery(document).ready(function($){
 
 	-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
-	$(document).on('click', '[data-popup]', function() {
+	$(document).on('click', '[data-popup]', function () {
 
 		var popupID = $(this).attr('data-popup');
+		var popup = $('#' + popupID);
 
 		// Disable scrolling
 		$('body').addClass('no-scroll');
@@ -71,15 +72,36 @@ jQuery(document).ready(function($){
 		// Close all popups first
 		$('.popup').removeClass('active');
 
+		// Video Popup
+		if (popupID == "video") {
+			var src = $(this).attr('data-src') || "";
+			var poster = $(this).attr('data-poster') || "";
+			var autoplay = typeof $(this).attr('data-autoplay') !== "undefined";
+			var video = popup.find('video');
+
+			// Update video source
+			video.attr('src', src);
+			video.attr('poster', poster);
+
+			// AutoPlay
+			if (autoplay) video.trigger('play');
+
+			console.log(src, poster, autoplay);
+
+		}
+
 		// Open the selected popup
-		$('#' + popupID).addClass('active');
+		popup.addClass('active');
 
 	});
 
-	$(document).on('click', '[close-popup], .popup:not(.no-overlay-close) > .overlay', function() {
+	$(document).on('click', '[close-popup], .popup:not(.no-overlay-close) > .overlay', function () {
 
 		// Close all popups
 		$('.popup').removeClass('active');
+
+		// Stop Videos
+		$('.popup').find('video').trigger('pause');
 
 		// Enable scrolling
 		$('body').removeClass('no-scroll');
@@ -111,13 +133,13 @@ jQuery(document).ready(function($){
 
 
 		// Pause other videos
-		$(".video-wrapper.playing video").each(function() {
+		$(".video-wrapper.playing video").each(function () {
 
 			pauseVideo(this);
 
 		});
 
-		if ( videoElement.prop('muted') ) {
+		if (videoElement.prop('muted')) {
 			video.currentTime = 0;
 			wrapper.addClass('playing');
 		}
@@ -129,23 +151,22 @@ jQuery(document).ready(function($){
 
 	function pauseVideo(video) {
 
-		var videoElement = $(video);
 		video.pause();
 
 	}
 
 
 	// When playing
-	$('.video-wrapper video').on('play', function() {
+	$('.video-wrapper video').on('play', function () {
 
 		var video = this;
 		var videoElement = $(video);
 		var wrapper = videoElement.parents('.video-wrapper');
 
-		if ( videoElement.prop('muted') ) video.currentTime = 0;
-		if ( !videoElement.prop('muted') ) wrapper.addClass('playing');
+		if (videoElement.prop('muted')) video.currentTime = 0;
+		if (!videoElement.prop('muted')) wrapper.addClass('playing');
 
-	}).on('pause', function() {
+	}).on('pause', function () {
 
 		var video = this;
 		var videoElement = $(video);
@@ -153,28 +174,28 @@ jQuery(document).ready(function($){
 
 		wrapper.removeClass('playing');
 
-	}).on('ended', function() {
+	}).on('ended', function () {
 
 		var video = this;
 
 		stopVideo(video);
 
-	}).on('click', function(e) {
+	}).on('click', function (e) {
 
 		var video = this;
 		var videoElement = $(video);
 		var wrapper = videoElement.parents('.video-wrapper');
 
-		if ( wrapper.hasClass('bg-video') ) {
+		if (wrapper.hasClass('bg-video')) {
 			e.preventDefault();
 			return false;
 		}
 
-		if ( !video.paused && !videoElement.prop('muted') ) pauseVideo(video);
-		else if ( video.paused && !videoElement.prop('muted') ) playVideo(video);
-		else if ( !video.paused && videoElement.prop('muted') ) playVideo(video);
+		if (!video.paused && !videoElement.prop('muted')) pauseVideo(video);
+		else if (video.paused && !videoElement.prop('muted')) playVideo(video);
+		else if (!video.paused && videoElement.prop('muted')) playVideo(video);
 
-	}).each(function() {
+	}).each(function () {
 
 		var video = this;
 		var videoElement = $(video);
@@ -185,28 +206,28 @@ jQuery(document).ready(function($){
 		var stopButton = wrapper.find('.stop-button');
 		var restartButton = wrapper.find('.restart-button');
 
-		playButton.click(function(e) {
+		playButton.click(function (e) {
 
 			playVideo(video);
 			e.preventDefault();
 
 		});
 
-		pauseButton.click(function(e) {
+		pauseButton.click(function (e) {
 
 			pauseVideo(video);
 			e.preventDefault();
 
 		});
 
-		stopButton.click(function(e) {
+		stopButton.click(function (e) {
 
 			stopVideo(video);
 			e.preventDefault();
 
 		});
 
-		restartButton.click(function(e) {
+		restartButton.click(function (e) {
 
 			stopVideo(video);
 			playVideo(video);
