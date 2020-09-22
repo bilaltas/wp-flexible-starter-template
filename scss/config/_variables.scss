@@ -112,8 +112,13 @@ $button-font: $button-font-weight #{$button-font-size "/" $button-line-height} $
 $input-bg-color: $color-lightest;
 $input-text-color: $color-darkest;
 
+$input-font-family: $text-font-family;
+$input-font-size: $text-font-size;
+$input-line-height: $text-line-height;
+$input-font-weight: $text-font-weight;
+
 $input-border-color: $border-color;
 $input-border-width: $border-width;
 $input-border-radius: $border-radius;
 
-$input-font: $text-font-weight #{$text-font-size "/" $text-line-height} $text-font-family;
+$input-font: $input-font-weight #{$input-font-size "/" $input-line-height} $input-font-family;
