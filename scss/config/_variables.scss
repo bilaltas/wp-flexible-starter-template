@@ -92,11 +92,16 @@ $border-radius: 3px;
 $button-bg-color: $color-dark;
 $button-text-color: $color-lightest;
 
+$button-font-family: $text-font-family;
+$button-font-size: $text-font-size;
+$button-line-height: $text-line-height;
+$button-font-weight: $text-font-weight;
+
 $button-border-color: $border-color;
 $button-border-width: $border-width;
 $button-border-radius: $border-radius;
 
-$button-font: $text-font-weight #{$text-font-size "/" $text-line-height} $text-font-family;
+$button-font: $button-font-weight #{$button-font-size "/" $button-line-height} $button-font-family;
 
 /*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
 
