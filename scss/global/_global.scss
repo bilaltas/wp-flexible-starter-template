@@ -444,3 +444,8 @@ main {
 	border: 0;
 	word-wrap: normal !important;
 }
+
+// Flexible Bug Fix
+.xl-middle.xl-between {
+	align-content: initial;
+}
